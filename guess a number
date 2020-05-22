@@ -1,0 +1,11 @@
+#--- guess number.
+i= int(input())
+print("enter no between 1 and 10")
+print(i)
+if i<5:
+   print("enter higher no.")
+   i=int(input())
+if i>5:
+	print("enter lower no.")
+if i==5:
+	print("you got it")
