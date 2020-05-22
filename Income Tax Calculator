@@ -1,0 +1,130 @@
+a= int(input(" please enter annual basic salary: "))
+b=int(input("pl. enter your annual hra : ")) 
+c=int(input("enter your annual sp. allowance: "))
+d=int(input("pl. enter your LTA: "))
+e=(a+b+c+d)                          # gross total salary
+print("your gross total annual salary is " + str(e))
+# Max. Deductions of rs. 150000 (section 80c)
+p=int(input(" please enter annual PPF deposit: "))
+q=int(input("pl. enter annual  ELSS investment:"))
+r=int(input(" pl. enter annual LIC premium:"))
+s=a*0.12
+t= (p+q+r+s)
+if (t> 150000):
+	print("you reached max. deduction of 150000:")
+elif (t<150000):
+	print(" your total deduction is: " + str(t))
+
+
+
+
+# Income Tax calculator
+gross= int(input())
+if  gross <=250000:
+	print("you dont have to pay tax.")     #no tax
+elif  250001<=gross<=500000:          
+    i=gross -250000
+    j=i*0.5
+    print("your tax liability is:  " + str(j))
+elif  500001<= gross <=750000:
+	      #<25000
+   k=gross-500000
+   l=k*0.1
+   m=k+12500
+   print("your tax liability is:  " + str(m))
+elif  750001<=gross <=1000000:	
+       #<37500
+     n= gross-750000
+     o=n*0.15
+     p=o+37500
+     print("your tax liability is :  "+str(p))
+         
+elif  1000001<=gross<=1250000:
+      #<50000
+   q=gross-1000000
+   r=q*0.2
+   s=r+75000
+   print("your tax liability is:  "+ str(s))
+ 	
+elif  1250001<=gross<=1500000:
+	      #<62500
+     t=gross-1250000
+     u=t*0.25
+     v=u + 125000
+     print("your tax liability is:  " +str(v))
+	
+elif   gross>1500001:
+	
+    w= gross-1500000
+    x=0.3*w
+    y=x+187500
+    print("your tax liability is:  "+ str(y))
+
+
+
+# income tax calculator.
+
+#basicsalary= int()               # basic annual salary
+#hra=int()                                   # hra
+#sp.allowance=int()                #sp. allowance
+#lta=int()                                    # lta
+#e=int()
+#gross total income=int()      # gross income
+a= int(input(" please enter annual basic salary: "))
+b=int(input("pl. enter your annual hra : ")) 
+c=int(input("enter your annual sp. allowance: "))
+d=int(input("pl. enter your LTA: "))
+e=(a+b+c+d)                          # gross total salary
+print("your gross total annual salary is " + str(e))
+# Max. Deductions of rs. 150000 (section 80c)
+
+pp=int(input(" please enter annual PPF deposit: "))
+qq=int(input("pl. enter annual  ELSS investment:"))
+rr=int(input(" pl. enter annual LIC premium:"))
+ss=a*0.12
+grosss= (pp+qq+rr+ss)
+if (grosss> 150000):
+	grosss=150000
+	print("you reached max. ded: "+ str(grosss))
+elif (grosss<150000):
+	print(" your total deduction is: " + str(grosss))	
+gross=int(e-grosss)
+if (gross<=250000):
+	print("you dont have to pay tax.")     #no tax
+elif  250001<=gross<=500000:          
+    i=gross -250000
+    j=i*0.5
+    print("your tax liability is:  " + str(j))
+elif  500001<= gross <=750000:
+	      #<25000
+   k=gross-500000
+   l=k*0.1
+   m=k+12500
+   print("your tax liability is:  " + str(m))
+elif  750001<=gross <=1000000:	
+       #<37500
+     n= gross-750000
+     o=n*0.15
+     p=o+37500
+     print("your tax liability is :  "+str(p))
+         
+elif  1000001<=gross<=1250000:
+      #<50000
+   q=gross-1000000
+   r=q*0.2
+   s=r+75000
+   print("your tax liability is:  "+ str(s))
+ 	
+elif  1250001<=gross<=1500000:
+	      #<62500
+     t=gross-1250000
+     u=t*0.25
+     v=u + 125000
+     print("your tax liability is:  " +str(v))
+	
+elif   gross>1500001:
+	
+    w= gross-1500000
+    x=0.3*w
+    y=x+187500
+    print("your tax liability is:  "+ str(y))
